@@ -1,0 +1,6 @@
+.far {
+    cursor:pointer;
+}
+.far:hover {
+    transform: scale(1.2);
+}
