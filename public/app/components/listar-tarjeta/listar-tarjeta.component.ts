@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { TarjetaCredito } from 'src/app/models/TarjetaCredito.model';
-import { TarjetaService } from 'src/app/services/targeta.service';
+import { TarjetaCredito } from 'public/app/models/TarjetaCredito.model';
+import { TarjetaService } from 'public/app/services/targeta.service';
 
 @Component({
   selector: 'app-listar-tarjeta',
