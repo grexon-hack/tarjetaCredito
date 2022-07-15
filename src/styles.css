@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-image:url(https://thumbs.dreamstime.com/b/papel-de-fondo-o-tapiz-hex%C3%A1gono-oscuro-del-tap%C3%B3n-hexagonal-d-representaci%C3%B3n-160588440.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}

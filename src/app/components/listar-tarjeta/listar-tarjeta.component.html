@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="titulo">LISTAR TARJETA</h5>
+    <table class="table" *ngIf="listTarjetas.length; else spinner">
+      <tbody>
+        <tr>
+          <td>Titular</td>
+          <td>N° Tarjeta</td>
+          <td>Fecha Exp</td>
+        </tr>
+        <tr *ngFor="let data of listTarjetas">
+          <td>{{ data.titular }}</td>
+          <td>{{ data.numeroTarjeta }}</td>
+          <td>{{ data.fechaExpiracion }}</td>
+          <td>
+            <i class="far fa-edit me-3 text-info"
+            (click)="editarTarjeta(data)"
+            ></i>
+            <i
+              class="far fa-trash-alt text-danger"
+              (click)="eliminarTarjeta(data.id)"
+            ></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #spinner>
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </ng-template>
+  </div>
+</div>
